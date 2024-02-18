@@ -1,0 +1,58 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+
+  & .left {
+    display: flex;
+    align-items: center;
+
+    & .category_dropdown {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid rgb(229, 229, 229);
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      position: relative;
+
+      & .category {
+        color: #009e7f;
+      }
+
+      & .dropdown_list {
+        position: absolute;
+        top: 200%;
+        box-shadow: rgb(142 142 142 / 14%);
+
+        & li {
+          list-style: none;
+          margin: 10px 5px;
+
+          &:hover {
+            color: #009e7f;
+          }
+        }
+      }
+    }
+
+    & .login_logo {
+      max-width: 150px;
+      margin-right: 40px;
+    }
+  }
+
+  & .join {
+    height: 38px;
+    background-color: #009e7f;
+    font-weight: 700;
+    padding: 0 15px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: none;
+    line-height: 24px;
+    color: #fff;
+  }
+}
